@@ -1,0 +1,121 @@
+/* Reset basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & fonts */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #eee;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-bottom: 5rem; /* for footer spacing */
+}
+
+/* Links */
+a {
+  color: #00ff99;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #33ffaa;
+  text-decoration: underline;
+}
+
+/* Header & nav */
+header {
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 255, 153, 0.3);
+}
+
+header h1 {
+  color: #00ff99;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #00ff99;
+  margin-bottom: 1rem;
+}
+
+/* Project cards */
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px #00ff9955;
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 1rem 0;
+  color: #777;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main {
+    margin: 1rem auto;
+    padding: 0 0.5rem;
+  }
+}
