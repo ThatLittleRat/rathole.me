@@ -1,42 +1,128 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Fonts and Base Colors === */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #121212;
-  color: #f1f1f1;
-  margin: 0;
-  padding: 0;
+  color: #f5f5f5;
+  line-height: 1.6;
+  padding-bottom: 5rem;
+}
+
+a {
+  color: #00ff99;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Header & Nav === */
+header {
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px #000;
+}
+
+header h1 {
+  color: #00ff99;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 nav {
-  background-color: #1e1e1e;
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  font-size: 1.1em;
+  margin-top: 0.5rem;
 }
 
 nav a {
-  color: #00ff99;
-  text-decoration: none;
+  margin: 0 1rem;
   font-weight: bold;
-  transition: 0.2s;
 }
 
-nav a:hover {
-  color: #ff00ff;
+/* === Main Content === */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-h1 {
-  padding: 1em;
+/* === Sections === */
+section {
+  margin-bottom: 2.5rem;
 }
 
-p, ul {
-  padding: 1em;
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #00ff99;
 }
 
+/* === Project Cards === */
+.project-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px #00ff9980;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card ul {
+  padding-left: 1.5rem;
+}
+
+/* === Footer === */
 footer {
-  padding: 2em 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  color: #999;
   text-align: center;
-  color: #888;
-  font-size: 0.9em;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+/* === Lists & Text === */
+ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+blockquote {
+  border-left: 4px solid #00ff99;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* === Mobile Fixes === */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
 }
